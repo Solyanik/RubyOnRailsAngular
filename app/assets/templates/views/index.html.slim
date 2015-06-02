@@ -20,8 +20,9 @@ div id="catalog-list" class="container-main container theme-showcase" role="main
 									p class="hidden-sm" 
 										strong Price: 
 										|{{item.price}}
-				div class="row text-center" ng-if="items.length == 0"
-					strong No results found...
+										
+					div class="row text-center" ng-if="items.length == 0"
+						strong No items found...
 										
 				div id="pagination" class="row text-center pagination-btn" ng-if="items.length > itemsPerPage"
 					div class="col-md-6 col-md-offset-3"
