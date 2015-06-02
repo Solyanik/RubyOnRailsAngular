@@ -6,7 +6,7 @@ app.controller 'index', [ '$scope', '$http',  ($scope, $http) ->
 	]
 
 	$scope.currentPage = 0;
-	#$scope.itemsPerPage = 18;
+	$scope.itemsPerPage = 6;
 		
 	$http.get '/api/catalogs'
  		.success (data, status, headers, config) -> $scope.items = data;

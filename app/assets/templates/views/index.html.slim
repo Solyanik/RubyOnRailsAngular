@@ -8,7 +8,7 @@ div id="catalog-list" class="container-main container theme-showcase" role="main
 				h2 Only good design, produced in Test (Test)
 				p We are specialists in the creation of brand identities and advertising campaigns for print and web.
 			
-			div	ng-controller="index"
+			div ng-controller="index"
 				div class="row row-content"
 					div class="col-sm-4" ng-repeat="item in items | startFrom: startingItem() | limitTo: itemsPerPage"
 						div class="media"
@@ -20,14 +20,14 @@ div id="catalog-list" class="container-main container theme-showcase" role="main
 									p class="hidden-sm" 
 										strong Price: 
 										|{{item.price}}
+				div class="row text-center" ng-if="items.length == 0"
+					strong No results found...
 										
-				div id="pagination" class="row text-center pagination-btn"
+				div id="pagination" class="row text-center pagination-btn" ng-if="items.length > itemsPerPage"
 					div class="col-md-6 col-md-offset-3"
 						button class="pull-left btn btn-primary btn-sm" ng-disabled="firstPage()" ng-click="pageBack()" Назад
 						span 
 							|{{currentPage+1}} из {{numberOfPages()}}
 						button class="pull-right  btn btn-primary btn-sm" ng-disabled="lastPage()" ng-click="pageForward()" Вперед
-				
+			
 				      
-			div class="row text-center" ng-if="items.length == 0"
-				strong No results found...
