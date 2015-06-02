@@ -6,3 +6,4 @@
 4. `rake db:create && db:migrate`
 5. `rails s`
 6. It's work!
+# RubyOnRailsAngular
