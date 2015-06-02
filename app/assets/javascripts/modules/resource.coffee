@@ -9,3 +9,4 @@ angular.module("appResource", [ "rails" ]).factory "AppModel", [
 
     AppModel
 ]
+

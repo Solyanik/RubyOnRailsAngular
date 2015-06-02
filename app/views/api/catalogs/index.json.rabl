@@ -1,2 +1,2 @@
-object @users
-extends 'api/users/show.json'
+object @catalogs
+extends 'api/catalogs/show.json'

@@ -1,1 +1,33 @@
-h1 Index page
+div class="slider" data-ng-include="" src="'elements/slider.html'"
+
+div id="catalog-list" class="container-main container theme-showcase" role="main"
+	div.wrapper
+  		div.content			
+
+			div class="presentazione"
+				h2 Only good design, produced in Empoli (Florence)
+				p We are specialists in the creation of brand identities and advertising campaigns for print and web.
+			
+			div	ng-controller="index"
+				div class="row row-content"
+					div class="col-sm-4" ng-repeat="item in items | startFrom: startingItem() | limitTo: itemsPerPage"
+						div class="media"
+							div class="row"
+				            	div class="media-body   col-sm-7 col-md-8"
+									h4 class="media-heading"
+										a href="/{{item.id}}" {{item.name}}
+									p class="hidden-sm" {{item.description}}
+									p class="hidden-sm" 
+										strong Price: 
+										|{{item.price}}
+										
+				div id="pagination" class="row text-center pagination-btn"
+					div class="col-md-6 col-md-offset-3"
+						button class="pull-left btn btn-primary btn-sm" ng-disabled="firstPage()" ng-click="pageBack()" Назад
+						span 
+							|{{currentPage+1}} из {{numberOfPages()}}
+						button class="pull-right  btn btn-primary btn-sm" ng-disabled="lastPage()" ng-click="pageForward()" Вперед
+				
+				      
+			div class="row text-center" ng-if="items.length == 0"
+				strong No results found...

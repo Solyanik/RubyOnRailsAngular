@@ -1,0 +1,155 @@
+@CHARSET "UTF-8";
+
+body {
+	padding-top: 51px;
+	padding-bottom: 0px;
+}
+
+.logo, .logo:hover {
+	font-size: 35px;
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.overlay .slider-txt-h2 {
+	font-size: 55px;
+}
+
+.overlay p {
+	font-size: 20px;
+}
+
+.overlay .btn-click {
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.hr-home-hero .overlay {
+	background: rgba(0,0,0,0) url("header-dotgrid.png") repeat center center;
+	width: 100%;
+	max-width: 100%;
+	padding: 14em 0;
+	height: 73%;
+	z-index: -1;
+	position: relative;
+}
+
+.hr-home-hero .video, .hr-home-hero video {
+	transition: opacity 0.3s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+
+.hr-home-hero video {
+	background-size: cover;
+}
+
+audio, canvas, video {
+	display: inline-block;
+}
+
+.hr-home-hero {
+  	width: 100%;
+  	overflow: hidden;
+  	padding: 0;
+  	position: relative;
+  	z-index: 1;
+  	color: #f8f9fa;
+}
+
+.static-hero {
+  	background-color: #ccc;
+  	position: relative;
+  	padding: 0;
+  	text-align: center;
+}
+
+.fill-dark {
+  	background: #595054;
+}
+
+.hr-home-herosub {
+  	position: relative;
+  	z-index: 1;
+}
+
+.pjB {
+  	padding-bottom: 20px;
+}
+
+.pjT {
+  	padding-top: 0px;
+}
+
+.hr-home-herosub:before {
+	height: 75px;
+	width: 75px;
+	content: '▼';
+	font-family: hricons;
+	color: white;
+	background: #595054;
+	border-radius: 75px;
+	position: absolute;
+	top: -42px;
+	left: 48%;
+	left: calc(50% - 36px);
+	box-sizing: border-box;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.navbar-inverse {
+	background-color: #595054;
+	border-color: #A9A9A9;
+}
+
+.presentazione {
+	text-align: center;
+	margin-bottom: 35px;
+	margin-top: 70px;
+}
+
+.media {
+	border-bottom: solid 1px #c7c9c8;
+	margin-bottom: 25px;
+	background: ghostwhite;
+	padding: 10px 10px 0 10px;
+}
+
+nav .search-input {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.container-main {
+	min-height: 600px;
+}
+
+.pagination-btn a {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.row.row-content {
+	min-height: 400px;
+}
+
+.container-contacts {
+	padding-top: 40px;
+	min-height: 500px;
+}
+
+.search-input {
+	margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 960px)
+.hr-home-hero .overlay {
+	padding: 12em 0;
+}

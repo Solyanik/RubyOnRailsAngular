@@ -1,6 +1,14 @@
-h1 Layout layout
-div.wrapper
-  div.content
-    div data-ng-include="" src="'elements/header.html'"
-    div.ui-view
-    div data-ng-include="" src="'elements/footer.html'"
+nav class="navbar navbar-inverse navbar-fixed-top"
+	div class="container"
+		div class="row"
+			div class="col-xs-12 col-md-8"
+				a href="/" class="logo" LOGO
+			div class="col-xs-6 col-md-4"
+				div id="navbar" class="navbar-collapse collapse"
+					ul class="nav navbar-nav" ng-controller="index"
+						li class="{{mItem.class}}" ng-repeat="mItem in menu"
+							a href="{{mItem.url}}" {{mItem.name}} 
+			
+div.ui-view
+		
+div class="footer" data-ng-include="" src="'elements/footer.html'"

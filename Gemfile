@@ -18,6 +18,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'angular-rails-templates'
 gem 'angularjs-rails-resource'
 
+#gem 'bootstrap-sass', '~> 3.3.4'
+#gem 'jquery-ui-rails'
+
 group :development do
 	gem 'capistrano', '3.2.1'
 	gem 'capistrano-rails', '~> 1.1'

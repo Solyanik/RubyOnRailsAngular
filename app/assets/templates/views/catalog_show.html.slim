@@ -1,0 +1,11 @@
+div id="catalog-list" class="container-main container theme-showcase" role="main"
+	div.wrapper
+  		div.content			
+
+			div	ng-controller="catalogs"
+				div class="row"
+						h1 class="media-heading" {{items.name}}
+						p class="hidden-sm" {{items.description}}
+						p class="hidden-sm" 
+							strong Price: 
+							|{{items.price}}

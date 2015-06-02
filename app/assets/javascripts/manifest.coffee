@@ -1,8 +1,12 @@
+#= require jquery/jquery
 #= require angular/angular
 #= require angular-ui-router/release/angular-ui-router
 #= require angular-rails-templates.js.erb
 #= require angularjs/rails/resource
 #= require angular-sanitize/angular-sanitize
+#= require bootstrap/bootstrap-sprockets
+#= require bootstrap/bootstrap
+#= require main
 
 
 ## Libraries

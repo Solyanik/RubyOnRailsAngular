@@ -1,3 +1,3 @@
 RademadeAdmin::Configuration.configure do
-  admin_model User
+	admin_model User
 end
