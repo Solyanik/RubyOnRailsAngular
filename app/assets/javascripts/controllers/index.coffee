@@ -28,5 +28,7 @@ app.controller 'index', [ '$scope', '$http',  ($scope, $http) ->
 ]
 
 app.filter 'startFrom', () -> (input, start) ->
-	start = +start
+	return if !input || !input.length
+	start = +start;
 	input.slice(start)
+	
